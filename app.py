@@ -2,20 +2,15 @@ import streamlit as st
 import plotly.graph_objects as go
 from PIL import Image
 
-PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
+PAGE_CONFIG = {"page_title":"Hydra-OpenVino_Tool","page_icon":":bar_chart:","layout":"centered"}
 st.beta_set_page_config(**PAGE_CONFIG)
-alpha = 3
-beta = -20
-if 3 > 0:
-  alpha += 20
 
-if 8 > 7:
-  beta += 67
+
   
 
 def main():
-    st.title("Awesome Streamlit for ML")
-    st.subheader("How to run streamlit from colab")
+    st.title("Hydra: OpenVino & AI based Remote plant monitoring & Feeding")
+    st.subheader("Hydra is an Intel OpenVino based Apple Vegetation Monitoring and Watering system with Visual and Geospatial Analysis based on AIoT Technology")
 if __name__ == '__main__':
     main()
 
@@ -51,8 +46,8 @@ fig = go.Figure(data=[go.Scatter(
 
 
 fig2 = go.Figure(
-    data=[go.Bar(y=[alpha, beta, 68, 54, 104, 89.45, 1000, 845, 72, 71, 64, 24, 7])],
-    layout_title_text="A Figure Displayed with fig.show()"
+    data=[go.Bar(y=[78, 65, 68, 54, 104, 89.45, 1000, 845, 72, 71, 64, 24, 7])],
+    layout_title_text="Average Temperature (dy)°C"
 )
 
 
